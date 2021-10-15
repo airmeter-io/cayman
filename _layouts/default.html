@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 
 {%- assign default_paths = site.pages   | map: "path" -%}
-{%- assign page_paths = site.header_pages | sort: "sortOrder" | default: default_paths)  -%}
+{%- assign page_paths = site.header_pages | sort: "sortOrder" | default: default_paths -%}
 {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
