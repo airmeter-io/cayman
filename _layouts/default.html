@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
 
-{%- assign default_paths = site.pages   | map: "path" -%}
-{%- assign page_paths = site.header_pages | sort: "sortOrder" | default: default_paths -%}
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
 {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
@@ -19,7 +19,7 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {%- for path in page_paths  -%}
+      {%- for path in page_paths -%}
       {%- assign my_page = site.pages | where: "path", path | first -%}
       {%- if my_page.maintitle -%}
       <a class="btn" href="{{ my_page.url | relative_url }}">{{ my_page.maintitle | escape }}</a>
