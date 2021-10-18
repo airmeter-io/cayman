@@ -40,13 +40,13 @@
           &gt;
         {% endif %}
         {%- if bc.url -%}
-          <a href="{{ bc.url }}">{{ bc.name }}<a>
+          <a href="{{ bc.url }}">{{ bc.name }}</a>
         {%- else -%}
           <span>{{ bc.name}}</span>
         {%- endif -%}
         {%- endfor -%}
       </div> 
-      
+
       {{ content }}
 
       <footer class="site-footer">
