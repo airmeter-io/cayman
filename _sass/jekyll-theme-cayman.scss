@@ -385,3 +385,16 @@ a {
   color: $blockquote-text-color;
   margin-bottom: 1rem;
 }
+
+.exticon img {
+  width: 32px;
+  height: 32px;
+}
+
+.exticon {
+  display: inline-block;
+}
+
++ .exticon {
+  margin-left: 1rem;
+}

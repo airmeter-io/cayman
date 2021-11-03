@@ -29,19 +29,20 @@
       {%- endfor -%}
       </p>
       <p>
+        {% if site.github.repo %}
+          <a href="https://github.com/{{ site.github.repo }}" class="exticon">
+            <img  alt="View {{ site.title }} on Github"  src="assets/svg/github-white.svg" />
+          </a>
+        {% endif %} 
         {% if site.twitter_username %}
-          <a href="https://twitter.com/{{ site.twitter_username }}">
-            <img alt="View {{ site.title }} on Twitter" src="assets/svg/twitter-white.svg" style="width:32px;height:32px"/>
+          <a href="https://twitter.com/{{ site.twitter_username }}" class="exticon">
+            <img alt="View {{ site.title }} on Twitter" src="assets/svg/twitter-white.svg"/>
           </a>
         {% endif %}
-        {% if site.github.repo %}
-          <a href="https://github.com/{{ site.github.repo }}">
-            <img  alt="View {{ site.title }} on Github"  src="assets/svg/github-white.svg" style="width:32px;height:32px"/>
-          </a>
-        {% endif %}     
+    
         {% if site.discord_invite %}
-          <a href="https://discord.gg/{{ site.discord_invite }}">
-            <img alt="Join {{ site.title }} on Discord"  src="assets/svg/Discord-Logo-Color.svg" style="width:32px;height:32px"/>
+          <a href="https://discord.gg/{{ site.discord_invite }}" target="_blank" class="exticon">
+            <img alt="Join {{ site.title }} on Discord"  src="assets/svg/Discord-Logo-Color.svg"/>
           </a>
         {% endif %}   
         
