@@ -30,19 +30,19 @@
       </p>
       <p>
         {% if site.github.repo %}
-          <a href="https://github.com/{{ site.github.repo }}" class="exticon">
-            <img  alt="View {{ site.title }} on Github"  src="/assets/svg/github-white.svg" />
+          <a href="https://github.com/{{ site.github.repo }}" class="exticon" title="View {{ site.title }} on Github"">
+            <img  alt="Github Logo"  src="/assets/svg/github-white.svg" />
           </a>
         {% endif %} 
         {% if site.twitter_username %}
-          <a href="https://twitter.com/{{ site.twitter_username }}" class="exticon">
-            <img alt="View {{ site.title }} on Twitter" src="/assets/svg/twitter-white.svg"/>
+          <a href="https://twitter.com/{{ site.twitter_username }}" class="exticon" title="View {{ site.title }} on Twitter">
+            <img alt="Twitter Logo" src="/assets/svg/twitter-white.svg"/>
           </a>
         {% endif %}
     
         {% if site.discord_invite %}
-          <a href="https://discord.gg/{{ site.discord_invite }}" target="_blank" class="exticon">
-            <img alt="Join {{ site.title }} on Discord"  src="/assets/svg/Discord-Logo-White.svg"/>
+          <a href="https://discord.gg/{{ site.discord_invite }}" target="_blank" class="exticon" title="Join {{ site.title }} on Discord">
+            <img alt="Discord Logo"  src="/assets/svg/Discord-Logo-White.svg"/>
           </a>
         {% endif %}   
         
