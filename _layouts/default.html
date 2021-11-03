@@ -30,20 +30,22 @@
       </p>
       <p>
         {% if site.twitter_username %}
-          <a href="https://twitter.com/{{ site.twitter_username }}" class="btn"><img alt="View {{ site.title }} on Twitter" src="assets/svg/twitter-white.svg" style="width:32px;height:32px"/></a>
+          <a href="https://twitter.com/{{ site.twitter_username }}">
+            <img alt="View {{ site.title }} on Twitter" src="assets/svg/twitter-white.svg" style="width:32px;height:32px"/>
+          </a>
         {% endif %}
         {% if site.github.repo %}
-          <a href="https://github.com/{{ site.github.repo }}" class="btn"><img  alt="View {{ site.title }} on Github"  src="assets/svg/github-white.svg" style="width:32px;height:32px"/></a>
+          <a href="https://github.com/{{ site.github.repo }}">
+            <img  alt="View {{ site.title }} on Github"  src="assets/svg/github-white.svg" style="width:32px;height:32px"/>
+          </a>
         {% endif %}     
         {% if site.discord_invite %}
-          <a href="https://discord.gg/{{ site.discord_invite }}" class="btn"><img alt="Join {{ site.title }} on Discord"  src="assets/svg/github-white.svg" style="width:32px;height:32px"/></a>
+          <a href="https://discord.gg/{{ site.discord_invite }}">
+            <img alt="Join {{ site.title }} on Discord"  src="assets/svg/Discord-Logo-Color.svg" style="width:32px;height:32px"/>
+          </a>
         {% endif %}   
         
       </p>
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
     </header>
    
     <main id="content" class="main-content" role="main">
